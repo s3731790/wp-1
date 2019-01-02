@@ -1,1 +1,1 @@
-Date	Name	Email	Mobile	MovieID	Day	Time	SA Qty	SP Qty	SC Qty	FA Qty	FC Qty	B1 Qty	B2 Qty	B3 Qty	Total
+Date	Name	Email	Mobile	MovieID	Day	Time	STA Qty	STP Qty	STC Qty	FCA Qty	FCP Qty	FCC Qty	Total
