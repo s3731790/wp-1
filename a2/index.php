@@ -15,7 +15,7 @@
 
     <header>
      <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
-      <div> <img src='../media/lunardoLogo4.png' alt='Lunardo logo' height=125
+      <div> <img src='../media/lunardoLogo.png' alt='Lunardo logo' height=125
     </header>
 
     <nav>
@@ -26,7 +26,8 @@
     </nav>
 
     <main>
-    <!---------------  Display ABOUT US -------------->
+             
+<!---------------  Display ABOUT US -------------->
      <p>  </p> <hr>
      <div class="section">
       <h2> <span style="color:#00308f;"> ABOUT US </span>  </h2>
@@ -124,18 +125,18 @@ th, td {
       <hr>
     <div class="section">
      <h2> <span style="color:#00308f;"> NOW SHOWING </span>  </h2>   
-     <div><img src='../media/theGirlInTheSpidersWeb2.jpg' alt='The Girl in the Spider Web' height=500 The Girl in the Spider Web
+     <div><img src='../media/theGirlInTheSpidersWeb.jpg' alt='The Girl in the Spider Web' height=500 The Girl in the Spider Web
               
     <div><img 
-    src='../media/aStarIsBorn2.jpg' 
+    src='../media/aStarIsBorn.jpg' 
     alt='A Star is Born' 
     height=500 A Star is Born 
         
-    <div><img src='../media/ralphBreaksTheInternet2.jpg' alt='Ralph Breaks the Internet' 
+    <div><img src='../media/ralphBreaksTheInternet.jpg' alt='Ralph Breaks the Internet' 
     height=500 Ralph Breaks the Internet   
         
     <div><img 
-    src='../media/boyErased2.jpg' 
+    src='../media/boyErased.jpg' 
     alt='Boy Erased' 
     height=500 Boy Erased      
     </div>
@@ -268,11 +269,13 @@ th, td {
 
        <!-- Send input data  -->
       <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php">
-     
-    </main>
-
+        
+    
+  
+</main>    
+<!----------------- Display footer ------------- -->
+        
     <footer>
-       <footer>
         <p>  </p> <hr>
         
       &copy; Lunardo Cinema
@@ -284,10 +287,7 @@ th, td {
              &nbsp;&nbsp;Email: lunardoCinema@gmail.com 
              &nbsp;&nbsp;&nbsp;&nbsp; Phone 1300 777 888 <br>
        <p>   <p>  </p> 
-      Kathryn Tolentino s3731790  &nbsp; GIT link
-      <script>
-        document.write(new Date().getFullYear());
-      </script>
+      Kathryn Tolentino s3731790  
     </footer>
         
   </body>
