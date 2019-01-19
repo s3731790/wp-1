@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <html lang='en'>
   <head>
     <meta charset="utf-8">
@@ -9,39 +10,39 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
-  </head>
-
-  <body>
-
-    <header>
-     <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
-      <div> <img src='../media/lunardoLogo.png' alt='Lunardo logo' height=125
-    </header>
-
-    <nav>
-      <div>  href="#">ABOUT US</a> |
+   
+    <!-- The navigation menu -->
+   <header> 
+    <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
+    <div> <img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/LunardoLogo.png' alt='Lunardo logo' height=125
+  <nav>
+  <a class="active" 
+    href="#">ABOUT US</a> |
   <a href="#">SEATS AND PRICES</a> |
   <a href="#">NOW SHOWING</a> |
-  <a href="#">BOOKING</a> |</div>
-    </nav>
+  <a href="#">BOOKING</a> |
+ </nav>  
+ <p>   
+ </p>    
+ <img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/cinema.jpg' alt='Cinema' height=200 width=1100
 
-    <main>
-             
-<!---------------  Display ABOUT US -------------->
+  <main>
+   
+<!---------------  Display ABOUT US ------------->
      <p>  </p> <hr>
      <div class="section">
       <h2> <span style="color:#00308f;"> ABOUT US </span>  </h2>
-  <h3> 
-                 
+   <h3> 
+    <p>            
     Lunardo has extensive improvements and renovations for you to enjoy your favourite movies.
     </p>    
-Lunardo offers reclinable first class seats and standard seats providing relaxing and much comfort seats for you to enjoy watching.
+Lunardo offers reclinable first class seats and standard seats providing relaxing and much enjoyable watching of movies.
            
     <p>    
 Lunardo is equipped with the latest Dolby projection and sound systems - upgraded with 3D Dolby Vision projection and Dolby Atmos sound.
 
     </p>
-Lunardo cinema where the show starts with you around...
+Lunardo cinema is where the show starts with you around...
     <p>
 See you soon!
     </p>
@@ -50,12 +51,12 @@ See you soon!
     <p>  <hr
     <div class="section">
     <h2> <span style="color:#00308f;"> SEATS AND PRICES </span>  </h2>
-    <div><img src='../media/lunardoSeats1.jpg' alt='First Class Seats' height=500 Standard Seats
-    <div><img src='../media/lunardoSeats1A.jpg' alt='First Class Seats Accesories' 
+    <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/LunardoSeats1.jpg' alt='First Class Seats' height=500 Standard Seats
+    <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/LunardoSeats1A.jpg' alt='First Class Seats Accesories' 
     height=500 First Class Seats Accessories
-    <div><img src='../media/lunardoSeatsStd.jpg' alt='Standard Seats' 
+    <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/LunardoSeatsStd.jpg' alt='Standard Seats' 
     height=500 Standard Class Seats 
-    <div><img src='../media/lunardoSeatsStdA.jpg' alt='Standard Seats Accesories' 
+    <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/LunardoSeatsStdA.jpg' alt='Standard Seats Accesories' 
     height=500 Standard Class Seats Accessories  
     </div>
   
@@ -121,33 +122,26 @@ th, td {
 </table>
  <br style="margin-bottom:240px;"/>  
     
-<!----------------- Display NOW SHOWING posters ------------------->
+<!--------------- Display NOW SHOWING posters and trailers ---------------->
       <hr>
     <div class="section">
      <h2> <span style="color:#00308f;"> NOW SHOWING </span>  </h2>   
-     <div><img src='../media/theGirlInTheSpidersWeb.jpg' alt='The Girl in the Spider Web' height=500 The Girl in the Spider Web
+     <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/theGirlInTheSpidersWeb.jpg' alt='The Girl in the Spider Web' height=500 The Girl in the Spider Web
               
-    <div><img 
-    src='../media/aStarIsBorn.jpg' 
-    alt='A Star is Born' 
-    height=500 A Star is Born 
-        
-    <div><img src='../media/ralphBreaksTheInternet.jpg' alt='Ralph Breaks the Internet' 
+    <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/aStarIsBorn.jpg' alt='A Star is Born' height=500 A Star is Born
+           
+    <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/ralphBreaksTheInternet.jpg' alt='Ralph Breaks the Internet' 
     height=500 Ralph Breaks the Internet   
         
-    <div><img 
-    src='../media/boyErased.jpg' 
-    alt='Boy Erased' 
-    height=500 Boy Erased      
-    </div>
-
+    <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/boyErased.jpg' alt='Boy Erased' height=500 Boy Erased </div>
 
 <!-- Trailers 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- The Girl in the Spiders Web -->   
-    <a href='../media/theGirlInTheSpidersWeb.mp4' The Girl in the Spiders Web </a>    
-    <div><img src='../media/theGirlInTheSpidersWebTrailer.jpg' alt='The Girl in the Spider Web'  height=400 width=1000 The Girl in the Spider Web 
-    class="container"> 
+    <a href='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/theGirlInTheSpidersWeb.mp4' The Girl in the Spiders Web </a>
+    <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/theGirlInTheSpidersWebTrailer.jpg' alt='The Girl in the Spiders Web' height=400 width=1000 A Star is Born
+     class="container">
+ 
         <p>
     <b>Make a Booking:</b>
     <button class="Girlbtn1">Wed-Fri 9pm</button>
@@ -156,8 +150,8 @@ th, td {
         </p>
               
   <!-- A Star is Born -->   
-    <a href='../media/aStarIsBorn.mp4' A Star is Born </a>   
-    <div><img src='../media/AStarIsBornTrailer.jpg' alt='A Star is Born' height=400 width=1000 A Star is Born
+    <a href='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/aStarIsBorn.mp4' A Star is Born </a>   
+    <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/AStarIsBornTrailer.jpg' alt='A Star is Born' height=400 width=1000 A Star is Born
      class="container">
         <p>
      <b>Make a Booking:</b>
@@ -167,21 +161,20 @@ th, td {
         </p>      
 
   <!-- Ralph Breaks the Internet --> 
-    <a href='../media/ralphBreaksTheInternet.mp4' Ralph Breaks the Internet </a> 
+    <a href='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/ralphBreaksTheInternet.mp4' Ralph Breaks the Internet </a> 
    <!--  <h3 class="center-align header-text  no-margin">Ralph Breaks the Internet</h3> --> 
-    <div><img src='../media/RalphBreaksTheInternetTrailer.jpg' alt='Ralph Breaks the Internet' height=400 width=1000 Ralph Breaks the Internet
+    <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/RalphBreaksTheInternetTrailer.jpg' alt='Ralph Breaks the Internet' height=400 width=1000 Ralph Breaks the Internet
     class="container">
         <p>
     <b>Make a Booking:<b>
     <button class="ralphBtn1">Mon-Tue 12pm</button>
     <button class="ralphBtn2">Wed-Fri 6pm</button>
     <button class="ralphBtn3">Sat-Sun 12pm</button>
-       </div> <br
-                  </p>          
+       </div> <br </p>          
        
   <!-- Boy Erased --->
-    <a href='../media/boyErased.mp4' Boy Erased </a> 
-      <div><img src='../media/BoyErasedTrailer.jpg' alt='Boy Erased' height=400 width=1000 Boy Erased  class="container">
+    <a href='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/boyErased.mp4' Boy Erased </a> 
+      <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/BoyErasedTrailer.jpg' alt='Boy Erased' height=400 width=1000 Boy Erased  class="container">
         <p>
     <b>Make a Booking:</b>
     <button class="boyBtn1">Wed-Fri 12pm</button>
@@ -189,24 +182,20 @@ th, td {
    </div> <br </p> <a  </a>   
         
 <!----------------- BOOKING ------------->
-  <p>  </p>  <p>  </p> <hr>
-    <div class="section">
-                 
-     <h2> <span style="color:#00308f;"> BOOKING </span>  </h2>   
- 
-  <body>
-  
+   <p>  </p>  <p>  </p> <hr>
+   <div class="section">
+   <h2> <span style="color:#00308f;"> BOOKING </span>  </h2>   
+   <body>
    <div align="left"> 
-  
     <h3>Movie:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Date/Time:  </h3>
-    <form>
-   <fieldset>
+     <form>
+     <fieldset>
         <legend>Standard</legend>
           <p>
               <label for="Adult">Adult</label>
               <input type="number" id="stdAdult" Adult="stdAdult" />
               
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <label for="name">Name:</label>
               <input type="text" id="name" Name="customerName" />
               
@@ -245,7 +234,7 @@ th, td {
      <fieldset>
               
           <legend>First Class</legend>
-          <p>
+              <p>
               <label for="Adult">Adult</label>
               <input type="number" id="firstdAdult" Adult="firstAdult" />
                <p>
@@ -255,40 +244,36 @@ th, td {
               <label for="Children">Children</label>
               <input type="number" id="firstChildren" Adult="firstChildren" />
                <p>
-                       
-         </p>
-         
-         Total $
+               </p>
+        Total $
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <button type="order" form="form" value="order">Order</button>
- </fieldset>
-</form>     
+       </fieldset>
+       </form>     
 
        <!-- Send input data  -->
       <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php">
-        
-    
-  
-</main>    
+</main>  
+       
 <!----------------- Display footer ------------- -->
         
     <footer>
         <p>  </p> <hr>
-        
       &copy; Lunardo Cinema
       <script>
-        document.write(new Date().getFullYear());  
+     document.write(new Date().getFullYear());  
       </script>
-           <br>
-             757 New Avenue Castle Hill NSW Sydney  
-             &nbsp;&nbsp;Email: lunardoCinema@gmail.com 
-             &nbsp;&nbsp;&nbsp;&nbsp; Phone 1300 777 888 <br>
-       <p>   <p>  </p> 
+      <br>
+      757 New Avenue Castle Hill NSW Sydney  
+      &nbsp;&nbsp;Email: lunardoCinema@gmail.com 
+      &nbsp;&nbsp;&nbsp;&nbsp; Phone 1300 777 888 <br>
+      <p>   </p> 
       Kathryn Tolentino s3731790  
-    </footer>
+      </footer>
         
-  </body>
+</body>
 </html>
+
