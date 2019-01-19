@@ -16,11 +16,11 @@
     <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
     <div> <img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/LunardoLogo.png' alt='Lunardo logo' height=125
   <nav>
-  <a class="active" 
-    href="#">ABOUT US</a> |
-  <a href="#">SEATS AND PRICES</a> |
-  <a href="#">NOW SHOWING</a> |
-  <a href="#">BOOKING</a> |
+   <ol>
+      <li><a href="#about">ABOUT US</a></li>
+      <li><a href="#seats">SEATS AND PRICES</a></li>
+      <li><a href="#showing">NOW SHOWING</a></li>   
+      <li><a href="#booking">BOOKING</a></li>  
  </nav>  
  <p>   
  </p>    
@@ -31,7 +31,7 @@
 <!---------------  Display ABOUT US ------------->
      <p>  </p> <hr>
      <div class="section">
-      <h2> <span style="color:#00308f;"> ABOUT US </span>  </h2>
+      <h2> <span id="about" style="color:#00308f;"> ABOUT US </span>  </h2>
    <h3> 
     <p>            
     Lunardo has extensive improvements and renovations for you to enjoy your favourite movies.
@@ -50,7 +50,7 @@ See you soon!
 <!----------------- Display SEATS AND PRICES ------------->
     <p>  <hr
     <div class="section">
-    <h2> <span style="color:#00308f;"> SEATS AND PRICES </span>  </h2>
+    <h2> <span id="seats" style="color:#00308f;"> SEATS AND PRICES </span>  </h2>
     <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/LunardoSeats1.jpg' alt='First Class Seats' height=500 Standard Seats
     <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/LunardoSeats1A.jpg' alt='First Class Seats Accesories' 
     height=500 First Class Seats Accessories
@@ -125,7 +125,7 @@ th, td {
 <!--------------- Display NOW SHOWING posters and trailers ---------------->
       <hr>
     <div class="section">
-     <h2> <span style="color:#00308f;"> NOW SHOWING </span>  </h2>   
+     <h2> <span id="showing" style="color:#00308f;"> NOW SHOWING </span>  </h2>   
      <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/theGirlInTheSpidersWeb.jpg' alt='The Girl in the Spider Web' height=500 The Girl in the Spider Web
               
     <div><img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/aStarIsBorn.jpg' alt='A Star is Born' height=500 A Star is Born
@@ -184,7 +184,7 @@ th, td {
 <!----------------- BOOKING ------------->
    <p>  </p>  <p>  </p> <hr>
    <div class="section">
-   <h2> <span style="color:#00308f;"> BOOKING </span>  </h2>   
+   <h2> <span id="booking"  style="color:#00308f;"> BOOKING </span>  </h2>   
    <body>
    <div align="left"> 
     <h3>Movie:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Date/Time:  </h3>
@@ -271,7 +271,7 @@ th, td {
       &nbsp;&nbsp;Email: lunardoCinema@gmail.com 
       &nbsp;&nbsp;&nbsp;&nbsp; Phone 1300 777 888 <br>
       <p>   </p> 
-      Kathryn Tolentino s3731790  
+      Kathryn Tolentino s3731790  https://github.com/s3731790/wp-1/edit/master/a2/index.php
       </footer>
         
 </body>
