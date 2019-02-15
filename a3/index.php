@@ -43,7 +43,7 @@
   <main>
 
    
-<!-- -------------  Display ABOUT US ---------- -->
+<!--   Display ABOUT US  -->
    <div id= "about" class="section">
    <p>  </p> <hr> <p> </p> <hr> <p>  </p> <hr> 
 
@@ -64,7 +64,7 @@
     </h3>
 
  
-<!----------------- Display SEATS AND PRICES ------------->
+<!-- Display SEATS AND PRICES ---->
    <div  id= "seats" class="section">
    <p>  </p> <hr> <p> </p> <hr> <p>  </p> <hr> 
    <h2> <span id="seats" style="color:#00308f;"> SEATS AND PRICES </span>  </h2>
@@ -129,11 +129,8 @@ th, td {
 </tr>
 </table>
   <br style="margin-bottom:240px;"/> 
-  
- </div>
-
-
-<!----- Display movie in panels and modal synopsis when clicked ------>
+  </div>
+<!--- Display movie in panels and modal synopsis when clicked -->
 
  <div id="showing" class="section">
      <p>  </p> <hr> <p> </p> <hr> <p>  </p> <hr> 
@@ -260,31 +257,12 @@ window.onclick = function(event) {
 --->
 
  </div> <br </p> <a  </a>     
-    
-  
-<!----------------- BOOKING ------------->
+
+<!--- BOOKING -->
 <div id="booking"  class="section"> 
 <p>  </p> <hr> <p> </p> <hr> <p>  </p> <hr> 
 
 <h2> <span id="booking" style="color:#00308f;"> BOOKING </span>  </h2>
-<!-- Declare form variables and set dummy data for testing -->
-<!--
-       movieID = "ACT";
-       movieDay = "WED";
-       moviehour = 09;
-       seatsSTP = 0;
-       seatsSTC = 0;
-       seatsFCA = 0;
-       seatsFCP =0;
-       seatsFCC = 0;
-       custName = "";
-       custEmail="";
-       custMobile="";
-       custCard = "";
-       custexpiry="";
-       order=0;
-   -->
-
 <p id="demo"></p>
 <script>
 document.getElementById("demo").innerHTML =
@@ -350,7 +328,7 @@ document.getElementById("demo").innerHTML =
    </div> <br </p> <a  </a>     
   </main> 
      
-<!----------------- Display footer ------------- -->
+<!--- Display footer  -->
         
     <footer> 
       <p>  </p> <hr>
@@ -367,6 +345,5 @@ document.getElementById("demo").innerHTML =
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div>Maintain links to your <a href='products.txt'>products spreadsheet</a> and <a href='orders.txt'>orders spreadsheet</a> here. <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
-   
-  </body>
+    </body>
 </html>
