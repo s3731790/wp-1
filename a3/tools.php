@@ -1,6 +1,6 @@
 <?php
-  session_start();
-  echo session_id();
+session_start();
+echo session_id();
 ?>
 
 <?php
@@ -14,6 +14,7 @@ return $ret;
 else
 echo $ret;
 }
+
 
 function printMyCode() {
 $lines = file($_SERVER['SCRIPT_FILENAME']);
@@ -37,5 +38,5 @@ $filename = $bits[count($bits)-1];
 echo "<style>nav a[href$='$filename'] { $css }</style>";
 }
 
-?>
 
+?>
