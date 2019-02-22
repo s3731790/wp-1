@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang='en'>
   <body>
 <head>
@@ -12,7 +12,7 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
     <script src='wireframe.js'></script>
  
-    <?php
+ <?php
         // This PHP code inserts CSS to style the "current page" link in the nav area
         $here = $_SERVER['SCRIPT_NAME']; 
         $bits = explode('/',$here); 
@@ -20,30 +20,29 @@
         echo "nav a[href$='$filename'] {
         box-shadow: 1px 1px 1px 2px navy;
       	}";
-     ?>
+ ?>
   </head>
   <!-- The navigation menu -->
    <header> 
-  </p> <hr>  </p> <hr>  
-
+</p> <hr>  
     <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
     <div> <img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/LunardoLogo.png' alt='Lunardo logo' height=125
 
  <nav>
-    <div class ="navbar">
-      <a class="active" 
+    <div class ="navbar" id ="navbar"> 
+      <a class="navlink active" 
       href="#about">ABOUT US</a> 
-      <a href="#seats">SEATS AND PRICES</a> 
-      <a href="#showing">NOW SHOWING</a> 
-      <a href="#booking">BOOKING</a> 
+      <a class="navlink" href="#seats">SEATS AND PRICES</a> 
+      <a class="navlink" href="#showing">NOW SHOWING</a> 
+      <a class="navlink" href="#booking">BOOKING</a> 
  </nav>  
  </div>
    
-  <img src= 'https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/cinema.jpg' alt='Cinema' height=200 width=1200>
+  <img src= 'https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/cinema.jpg' alt='Cinema' height=300 width=1200>
   <main>
 
    
-<!--   Display ABOUT US  -->
+<!-- -------------  Display ABOUT US ---------- -->
    <div id= "about" class="section">
    <p>  </p> <hr> <p> </p> <hr> <p>  </p> <hr> 
 
@@ -64,7 +63,7 @@
     </h3>
 
  
-<!-- Display SEATS AND PRICES ---->
+<!----------------- Display SEATS AND PRICES ------------->
    <div  id= "seats" class="section">
    <p>  </p> <hr> <p> </p> <hr> <p>  </p> <hr> 
    <h2> <span id="seats" style="color:#00308f;"> SEATS AND PRICES </span>  </h2>
@@ -75,13 +74,20 @@
  <!--   <div class="section"> -->
  <h3> <span style="color:#00308f;"> SEAT PRICES (A$)</span>  </h3>  
 <style>
-table, th, td {
-  border: 1px solid black;
+table {
+  font-family: arial, sans-serif;
   border-collapse: collapse;
+  width: 100%;
 }
-th, td {
-  padding: 5px;
+
+td, th {
+  border: 1px solid #dddddd;
   text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 </style>
 <table>
@@ -129,8 +135,11 @@ th, td {
 </tr>
 </table>
   <br style="margin-bottom:240px;"/> 
-  </div>
-<!--- Display movie in panels and modal synopsis when clicked -->
+  
+ </div>
+
+
+<!----- Display movie in panels and modal synopsis when clicked ------>
 
  <div id="showing" class="section">
      <p>  </p> <hr> <p> </p> <hr> <p>  </p> <hr> 
@@ -159,25 +168,29 @@ th, td {
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
- <img src= 'https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/theGirlInTheSpidersWebTrailer.jpg' alt= 'The Girl in the Spider Web' style="width:70%" height 70%">  
+<b>Make a Booking:</b> 
+<button onclick="bookMovie('ACT', 'Wed', '21')">Thu - 9pm</button>
+<button onclick="bookMovie('ACT', 'Thu', '21')">Fri - 9pm</button>
+<button onclick="bookMovie('ACT', 'Fri', '21')">Thu - 9pm</button>
+<button onclick="bookMovie('ACT', 'Sat', '18')">Sat - 6pm</button>
+<button onclick="bookMovie('ACT', 'Sun', '18')">Sun - 6pm</button>
+<p> </p>
+ <!-- <img src= 'https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/theGirlInTheSpidersWebTrailer.jpg' alt= 'The Girl in the Spider Web' style="width:70%" height 70%">  -->
+  <a href='media/theGirlInTheSpidersWeb.mp4' The Girl in the Spiders Web </a>
+    <img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/theGirlInTheSpidersWebTrailer.jpg' alt='The Girl in the Spiders Web' height=400 width=1000 A Star is Born
+     class="container">
+<!--
 <p> </p>
 <b>Make a Booking:</b> 
 <button onclick="bookMovie('ACT', 'Wed', '21')">Thu - 9pm</button>
 <button onclick="bookMovie('ACT', 'Thu', '21')">Fri - 9pm</button>
 <button onclick="bookMovie('ACT', 'Fri', '21')">Thu - 9pm</button>
 <button onclick="bookMovie('ACT', 'Sat', '18')">Sat - 6pm</button>
-<button onclick="BookMovie('ACT', 'Sun', '18')">Sun - 6pm</button>
+<button onclick="bookMovie('ACT', 'Sun', '18')">Sun - 6pm</button>
+-->
+
 </div>
 
-<script>
-function bookMovie(movieid, day, hour) {
-  bookmovie[$booking] = movieid
-  bookday[$booking] = day
-  bookHour[$booking] = hour
-  echo "Book day " + bookday[$booking];
-
-}
-</script>
 
 <script>
 // Get modal
@@ -205,12 +218,40 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+var navContainer = document.getElementById("navbar");
+
+var navlinks = navContainer.getElementsByClassName("navlink");
+
+for (var i = 0; i < navlinks.length; i++) {
+  navlinks[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) { 
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked navlinks
+    this.className += " active";
+  });
+}
+
+function bookMovie(movieid, day, hour) {
+  alert('Movie: Girl inthe Spiders Web ' + movieid + ' - ' + day + ' - ' + hour + '00');
+/*  bookmovie[$booking] = movieid
+  bookday[$booking] = day
+  bookHour[$booking] = hour
+  echo "Book day " + bookday[$booking];*/
+
+}
+
 </script>
 
 
-  <!--  The Girl in the Spiders Web 
+ <!--  The Girl in the Spiders Web 
    
-    <a href='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/theGirlInTheSpidersWeb.mp4' The Girl in the Spiders Web </a>
+    <a href='media/theGirlInTheSpidersWeb.mp4' The Girl in the Spiders Web </a>
     <img src='https://titan.csit.rmit.edu.au/~s3731790/wp/a2/media/theGirlInTheSpidersWebTrailer.jpg' alt='The Girl in the Spiders Web' height=400 width=1000 A Star is Born
      class="container">
  
@@ -257,78 +298,103 @@ window.onclick = function(event) {
 --->
 
  </div> <br </p> <a  </a>     
-
-<!--- BOOKING -->
+    
+  
+<!----------------- BOOKING ------------->
 <div id="booking"  class="section"> 
 <p>  </p> <hr> <p> </p> <hr> <p>  </p> <hr> 
 
 <h2> <span id="booking" style="color:#00308f;"> BOOKING </span>  </h2>
+
 <p id="demo"></p>
-<script>
+<script> 
+ movie[ID] = "ACT";
+ movie[day] = "WED";
+ movie[hour] = 2100;
+alert('Movie: Girl in the Spiders Web ' + movieid + ' - ' + day + ' - ' + hour + '00');
 document.getElementById("demo").innerHTML =
- Movie:     Date/Time:;
- document.write(bookDay);
+ Movie: The Girl in the Spiders Web   Date/Time:  
+ document.write(day);
 </script>
    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
     <div align="left"> 
 
     <h3>Movie:  &nbsp;&nbsp  Date/Time:  </h3>
-    <fieldset>
+     <fieldset>
         <legend>Standard</legend>
           <p>
 
 	      <span class="tab1"></span> <label for="Adult">Adult</label>
-              <input type="number" min = "0" max="10" step="1" id="seatsSTA" Adult="seatsSTA" />
+              <input type="number" min = "0" max="10" step="1" name = "seats[STA]" Adult="seatsSTA" />
       
 	      <span class="tab2"></span> <label for="name">Name</label>
-              <input type="text" id="custName" Name="custName" required >
+              <input type="text" id="customer" Name="cust[name]"  pattern= "^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$">
                <p>
                 <label for="Concession">Concession</label>
-              <input type="number" min = "0" max="10" id="seatsSTP" Adult="seatsSTP" />
+              <input type="number" min = "0" max="10" name = "seats[STP]" Adult="seatsSTP" />
             
               <span class="tab3"></span> <label for="custEmail">E-mail</label>
-             <input type="text" id="cusrEmail" name="custEmail" />
-              <p>
+             <input type="email" id="custEmail" name="cust[email]" />
+             <p>
              
-  	      <span class="tab4"></span> <label for="Children">Children</label>
-              <input type="number" max="10" id="seatsSTC" Adult="seatsSTC" />
+  	      <span class="tab4"></span> <label for="Child">Child</label>
+              <input type="number" min = "0" max="10" name ="seats[STC]" Adult="seatsSTC" />
 	    
              <span class="tab5"></span>  <label for="mobile">Mobile</label>
-             <input type="tel" id="custMobile" name="cusMobile" />
+             <input type="tel" id="custMobile" name="cust[mobile]" />
              <p>
 	    
 	     <span class="tab6"></span> <label for="custCard">Credit Card</label>
-             <input type="text" id="custCard" name="custCard" />
+             <input type="text" id="custCard" name="cust[card]" />
              <p>
   	    <span class="tab6"></span> <label for="custExpiry">Expiry Date</label>
-            <input type="month" id="custExpiry" name="custExpiry" />  
+            <input type="month" id="custExpiry" name="cust[expiry]" />  
  	     <p>
 
           </fieldset>
+      
       
           <fieldset>
           <legend>First Class</legend>
               <p>
 	      <span class="tab1"></span> <label for="Adult">Adult</label>
-              <input type="number" min = "0" max="10" id="seatsFCP" Adult="seatsFCP" />
+              <input type="number" min = "0" max="10" name ="seats[FCA]" Adult="seatsFCP" />
                <p>
               <label for="Concession">Concession</label>
-              <input type="number" min = "0" max="10"  id="seatsFCP" Adult="seatsFCP" />
+              <input type="number" min = "0" max="10"  name="seats[FCP]" Adult="seatsFCP" />
                <p>
  	      <span class="tab4"></span> <label for="seatsFCC">Children</label>
-              <input type="number" min = "0" max="10" id="seatsFCC" Adult="seatsFCC" />
+              <input type="number" min = "0" max="10" name="seats[FCC]" Adult="seatsFCC" />
                <p>
                 <p>
              <span class="tab2"> Total $
-             <span class="tab6"> <button type="order" form="form" value="order">Order</button> 
+             <span class="tab6"> <button type="submit" value="Submit">Order</button>
+
        </fieldset>
        </form>     
       </div>
  
+// Calculate cost of seat tickets
+<button onclick="calcFunction(seats[STA], seats[STP], seats[STC], seats[FCA], seats[FCAP, seats[FCC])">Get Total</button>
+<p id="cost"></p>
+
+<script>
+function calcFunction() {
+  var a = 14*seats[STA]
+  var b = 12.50*seats[STP]
+  var c = 11*seats[STC]
+  var d = 24*seats[STA]
+  var e = 22.50*seats[STP]
+  var f = 21*seats[STC]
+  var total = a + b + c + d + e + f
+  document.getElementById("cost").innerHTML = total;
+}
+</script>
+
    </div> <br </p> <a  </a>     
   </main> 
      
-<!--- Display footer  -->
+<!----------------- Display footer ------------- -->
         
     <footer> 
       <p>  </p> <hr>
@@ -342,8 +408,10 @@ document.getElementById("demo").innerHTML =
       &nbsp;&nbsp;&nbsp;&nbsp; Phone 1300 777 888 <br>
       <p>   </p> 
       Kathryn Tolentino s3731790  &nbsp;&nbsp;  https://github.com/s3731790/wp-1/edit/master/a3/index.php
-      <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
+     <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div>Maintain links to your <a href='products.txt'>products spreadsheet</a> and <a href='orders.txt'>orders spreadsheet</a> here. <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
-    </body>
+      </footer>
+        
+</body>
 </html>
