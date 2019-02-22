@@ -1,13 +1,17 @@
+* This stylesheet is for your tested CSS, styles here will be deactivated when toggling wireframe style *./
+
 header
 {
     background-image: url(background.jpg);
     height:100vh;
-    background-size: cover;
+    backgroun-size: cover;
     background-position: center;
 }
 
+
 #about
 { background-color: #B0E0E6
+
   
 }
 
@@ -16,8 +20,7 @@ header
 }
 
 #showing
-{ background-color: #C0C0C0
-
+{ background-color: #B0E0E6
 }
 
 #booking
@@ -25,9 +28,6 @@ header
 
 }
 
-body {
-  background-color: white;
-}
 
 footer {
   background-color: white;
@@ -62,6 +62,7 @@ footer {
        display:inline-block; 
        margin-left: 265px; 
 }
+
 
 .navbar {
   overflow: hidden;
@@ -100,6 +101,7 @@ section{
   color:white;
   font-size:2em;
 }
+
 
 .clicked{
     border:1px solid black;
@@ -150,6 +152,7 @@ h1,h2,h3{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
   cursor: pointer;
 }
 
+
 .button {
   background-color: #4CAF50;
   border: none;
@@ -169,6 +172,19 @@ h1,h2,h3{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
   padding: 10px;
 }
 
+.column {
+  float: left;
+  width: 23%;
+  padding: 10px;
+  color: green;
+
+.row {
+  float: left;
+  width: 23%;
+  padding: 10px;
+  color: green;
+
+
 
 /* Style the images inside the grid */
 .column img {
@@ -186,8 +202,14 @@ h1,h2,h3{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
   cursor: pointer;
 }
 
+
+
 body {
      height:100%;
      margin:0;
      padding:0;
+     background-image: url('background.jpg');
+    
 }
+
+
